@@ -1,0 +1,10 @@
+@import '../../../styles.scss';
+
+.header-container {
+    background-color: $bg-color;
+    font-size: 2rem;
+    padding: 20px;
+    margin: 0 10px;
+    font-weight: bolder;
+    color: $black;
+}

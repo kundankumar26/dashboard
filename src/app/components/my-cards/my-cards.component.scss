@@ -1,0 +1,100 @@
+@import '../../../styles.scss';
+
+.cards-container {
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: $black;
+    padding: 20px;
+    border-radius: $container-radius;
+    border: 1px solid grey;
+
+    .card-label {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .dot {
+        height: 20px;
+        float: right;
+        opacity: 0.6;
+    }
+
+    .credit-card {
+        height: 20vh;
+        margin: 40px 0 20px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+
+    .balance-container {
+        background-color: $white;
+        border-radius: $container-radius;
+        padding: 20px;
+        color: $grey;
+        font-weight: 500;
+        margin: 20px 0;
+        box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+
+        .horizontal-bar {
+            opacity: 0.1;
+        }
+
+        .balance-section {
+            padding: 5px;
+
+            .balance-values {
+                margin-top: 10px;
+                display: flex;
+    
+                .balance {
+                    font-size: 1.1rem;
+                    font-weight: bolder;
+                    color: $black;
+                    width: 50%;
+                }
+                .percent {
+                    font-size: 0.7rem;
+                    color: $black;
+                    font-weight: 500;
+    
+                    .increment {
+                        color: $green;
+                    }
+                    .decrement {
+                        color: $pink;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        .currency-section {
+            font-size: 0.7rem;
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+
+            .currency-items {
+                display: flex;
+                flex-direction: column;
+                margin-right: 20px;
+                width: 50%;
+
+                .values {
+                    font-size: 0.5;
+                    color: $black;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .new-card-btn {
+        color: #6c86db;
+        font-weight: bold;
+        font-size: 0.85rem;
+        background-color: $light-blue;
+    }
+}

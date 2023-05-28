@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+$black: #3A3A3A;
+$grey: #969696;
+$bg-color: #FAFAFA;
+$white: #FFFFFF;
+$royal-blue: #2947AA;
+$light-blue: #EAEDF8;
+$green: #92C17B;
+$pink: #E0B1AE;
+$container-radius: 10px;
+$body-color: #fafafa;
+
+html, body { height: 100%; }
+body {
+    margin: 0;
+    font-family: 'Lato', "Helvetica Neue", sans-serif;
+    background-color: $body-color;
+}
+
+

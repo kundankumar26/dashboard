@@ -1,0 +1,15 @@
+<div class="main-container">
+    <div class="left-container">
+        <div class="widget-list">
+            <ng-container *ngFor="let widget of widgetList">
+                <app-widgets [widget]="widget"></app-widgets>
+            </ng-container>
+        </div>
+        <app-graphs></app-graphs>
+        <app-transactions></app-transactions>
+    </div>
+    <div class="right-container">
+        <app-my-cards></app-my-cards>
+        <app-quick-transfer></app-quick-transfer>
+    </div>
+</div>
