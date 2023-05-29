@@ -6,12 +6,12 @@
     flex-direction: column;
     justify-content: space-evenly;
     color: $black;
-    padding: 20px;
+    padding: $internal-padding;
     border-radius: $container-radius;
-    border: 1px solid grey;
+    border: $border;
 
     .card-label {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: bold;
     }
 
@@ -22,46 +22,49 @@
     }
 
     .credit-card {
-        height: 20vh;
-        margin: 40px 0 20px;
+        width: 100%;
+        margin: 35px 0 15px;
         border-radius: 10px;
+        object-fit: contain;
         box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     }
 
     .balance-container {
         background-color: $white;
         border-radius: $container-radius;
-        padding: 20px;
+        padding: 30px 20px;
         color: $grey;
         font-weight: 500;
         margin: 20px 0;
-        box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+        box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -10px;
 
         .horizontal-bar {
             opacity: 0.1;
         }
 
         .balance-section {
-            padding: 5px;
+            font-size: 1rem;
 
             .balance-values {
-                margin-top: 10px;
+                margin-top: 15px;
                 display: flex;
-    
+
                 .balance {
-                    font-size: 1.1rem;
+                    font-size: 1.4rem;
                     font-weight: bolder;
                     color: $black;
                     width: 50%;
                 }
+
                 .percent {
-                    font-size: 0.7rem;
+                    font-size: 0.9rem;
                     color: $black;
                     font-weight: 500;
-    
+
                     .increment {
                         color: $green;
                     }
+
                     .decrement {
                         color: $pink;
                         margin-left: 10px;
@@ -71,7 +74,7 @@
         }
 
         .currency-section {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
             text-align: left;
             display: flex;
             flex-direction: row;
@@ -83,18 +86,23 @@
                 width: 50%;
 
                 .values {
-                    font-size: 0.5;
+                    font-size: 0.88rem;
                     color: $black;
-                    font-weight: 600;
+                    font-weight: bold;
                 }
             }
         }
     }
 
     .new-card-btn {
-        color: #6c86db;
-        font-weight: bold;
-        font-size: 0.85rem;
+        margin-top: 12px;
+        color: #506ed2;
+        font-weight: 800;
+        font-size: 1.1rem;
         background-color: $light-blue;
+        border-radius: 7px;
+        box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -7px;
+        height: 45px;
+        letter-spacing: 0px;
     }
 }

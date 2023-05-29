@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Widget } from '../main/main.component';
+import { Widget } from 'src/assets/constants/constant-values';
 
 @Component({
   selector: 'app-widgets',

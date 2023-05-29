@@ -1,29 +1,30 @@
 @import '../../../styles.scss';
 
 .widget-container {
-    min-height: 22vh;
     min-width: 11vw;
-    padding: 25px;
+    padding: 30px 30px 40px 30px;
     margin-right: 30px;
     border-radius: $container-radius;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: $white;
-    border: 1px solid grey;
+    border: $border;
 
     &:hover {
-        background: rgb(79,108,209);
-        background: linear-gradient(145deg, rgba(79,108,209,1) 0%, rgba(38,67,167,1) 100%);
+        background: rgb(59, 93, 212);
+        background: linear-gradient(145deg, rgba(59, 93, 212, 1) 0%, rgba(38, 67, 167, 1) 100%);
         cursor: pointer;
-        box-shadow: rgba(33, 35, 38, 0.9) 0px 10px 10px -10px;
+        box-shadow: rgba(0, 0, 0, 0.2) -4px 9px 25px 6px;
 
         .dot {
             filter: invert(100%);
         }
+
         .widget-label {
             color: $bg-color;
         }
+
         .widget-value {
             color: $white
         }
@@ -34,23 +35,28 @@
         justify-content: space-between;
 
         .wallet {
-            height: 30px;
-            padding: 10px;
+            height: 50px;
+            padding: 15px;
             border-radius: 100%;
             background-color: $light-blue;
         }
+
         .dot {
             height: 20px;
             opacity: 0.6;
         }
     }
+
     .widget-label {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        font-weight: 500;
         color: $grey;
+        margin: 25px 0;
     }
+
     .widget-value {
         font-size: 2rem;
-        font-weight: bold;
+        font-weight: 600;
         color: $black
     }
 }

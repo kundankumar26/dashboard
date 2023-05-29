@@ -1,19 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 $black: #3A3A3A;
 $grey: #969696;
-$bg-color: #FAFAFA;
+$bg-color: #fcfcfc;
 $white: #FFFFFF;
 $royal-blue: #2947AA;
 $light-blue: #EAEDF8;
-$green: #92C17B;
-$pink: #E0B1AE;
+$green: #00D100;
+$pink: #FB8DA0;
 $container-radius: 10px;
-$body-color: #fafafa;
+$body-color: #eeeeee70;
+$internal-padding: 30px;
+$shadow-light: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+// $border: 1px solid black;
+$border: none;
 
 html, body { height: 100%; }
 body {
     margin: 0;
-    font-family: 'Lato', "Helvetica Neue", sans-serif;
+    font-family: 'Rubik', sans-serif !important;
     background-color: $body-color;
 }
 

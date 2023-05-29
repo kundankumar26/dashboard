@@ -14,7 +14,7 @@ import { TransactionsComponent } from './components/transactions/transactions.co
 import { MyCardsComponent } from './components/my-cards/my-cards.component';
 import { QuickTransferComponent } from './components/quick-transfer/quick-transfer.component';
 import { MatTableModule } from '@angular/material/table';
-import { CreditCardComponent } from './components/my-cards/credit-card/credit-card.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,8 +26,7 @@ import { CreditCardComponent } from './components/my-cards/credit-card/credit-ca
     GraphsComponent,
     TransactionsComponent,
     MyCardsComponent,
-    QuickTransferComponent,
-    CreditCardComponent
+    QuickTransferComponent
   ],
   imports: [
     BrowserModule,
@@ -35,9 +34,10 @@ import { CreditCardComponent } from './components/my-cards/credit-card/credit-ca
     BrowserAnimationsModule,
     MatButtonModule,
     MatGridListModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

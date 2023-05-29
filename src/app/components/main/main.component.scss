@@ -1,4 +1,4 @@
-
+@import "../../../styles.scss";
 
 .main-container {
     display: flex;
@@ -6,17 +6,30 @@
     justify-content: space-between;
 
     .left-container {
-        flex: 1 1 80vw;
+        flex: 1 1 75%;
 
         .widget-list {
             display: flex;
-            height: 100%;
             width: 100%;
+            margin-bottom: 30px;
+
+            .widgets {
+                flex: 1;
+            }
+        }
+
+        .transaction {
+            display: flex;
+            flex-direction: column;
+            padding: $internal-padding;
+            border-radius: $container-radius;
+            background-color: $white;
+            border: $border;
+            margin: 30px 30px 0 0;
         }
     }
 
     .right-container {
-        flex: 1 1 20vw;
-
+        flex: 1 1 25%;
     }
 }

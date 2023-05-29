@@ -2,11 +2,11 @@
     <div class="left-container">
         <div class="widget-list">
             <ng-container *ngFor="let widget of widgetList">
-                <app-widgets [widget]="widget"></app-widgets>
+                <app-widgets [widget]="widget" class="widgets"></app-widgets>
             </ng-container>
         </div>
         <app-graphs></app-graphs>
-        <app-transactions></app-transactions>
+        <app-transactions [transactionList]="transactionList" class="transaction"></app-transactions>
     </div>
     <div class="right-container">
         <app-my-cards></app-my-cards>

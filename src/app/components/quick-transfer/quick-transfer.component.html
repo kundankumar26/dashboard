@@ -1,1 +1,16 @@
-<p>quick-transfer works!</p>
+<div class="transfer-container">
+    <span class="transfer-label">Quick Transfer</span>
+    <div class="image-container">
+        <img *ngFor="let image of imageList" [src]="image" class="person-img" alt="profile pic" />
+        <img src="./assets/img/arrow-point-to-right.png" class="arrow-icon" alt="more options">
+    </div>
+    <span class="card-number">Card Number</span>
+    <div class="input-container">
+        <span class="right-align">VISA</span>
+        <input type="text" class="left-align" placeholder="0818 7183 0713 2514" />
+    </div>
+    <div class="btn-container">
+        <button mat-flat-button color="primary" class="send-btn">Send Money</button>
+        <button mat-flat-button class="draft-btn">Save as Draft</button>
+    </div>
+</div>

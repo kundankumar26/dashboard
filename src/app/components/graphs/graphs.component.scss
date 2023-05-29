@@ -1,0 +1,114 @@
+@import "../../../styles.scss";
+
+.chart-container {
+    display: flex;
+    width: 100%;
+    height: 16%;
+
+    .line-chart-container {
+        border: $border;
+        flex: 1 1 65%;
+
+        .line-chart {
+            padding: 0 5px 45px 5px;
+            height: 85%;
+
+            #lineChart {
+                width: 100%;
+            }
+        }
+    }
+
+    .pie-chart-container {
+        border: $border;
+        flex: 1 1 35%;
+
+        .pie-chart {
+            padding: 0 5px 0px 5px;
+            position: relative;
+            top: -17%;
+        }
+        
+        .currency-section {
+            padding: $internal-padding;
+            padding-top: 0;
+            font-size: 0.9rem;
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            top: -35%;
+
+            .currency-items {
+                display: flex;
+                flex-direction: column;
+
+                .values {
+                    padding-top: 10px;
+                    font-size: 1.2rem;
+                    color: $black;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .chart-design {
+        background-color: $white;
+        border-radius: $container-radius;
+        margin-right: 30px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: $internal-padding;
+        padding-bottom: 0px;
+        padding-right: 50px;
+
+        .income {
+            margin-right: 20px;
+            color: $grey;
+
+            .income-color {
+                display: inline-block;
+                height: 7px;
+                width: 7px;
+                border-radius: 50%;
+                background-color: #5367bc;
+                margin-right: 5px;
+            }
+        }
+
+        .outcome {
+            color: $grey;
+            margin-right: 20px;
+
+            .outcome-color {
+                display: inline-block;
+                height: 7px;
+                width: 7px;
+                border-radius: 50%;
+                background-color: #ee7369;
+                margin-right: 5px;
+            }
+        }
+
+        .chart-label {
+            font-size: 1.3rem;
+            color: $black;
+            font-weight: 600;
+        }
+
+        .recent-label {
+            color: $grey;
+    
+            .arrow-icon {
+                height: 10px;
+                margin-left: 8px;
+                opacity: 0.3;
+            }
+        }
+    }    
+}
