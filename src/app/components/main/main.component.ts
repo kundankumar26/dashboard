@@ -21,9 +21,9 @@ export class MainComponent implements OnInit, OnDestroy {
       next: (balances: Balance) => {
         this.widgetList = this.widgetList.filter((widget: Widget) => {
           const key = widget.label.toLowerCase();
-          if (balances.hasOwnProperty(key) !== undefined) {
-            widget.value = `$${(balances as any)[key]}`;
-          }
+          // if (balances.hasOwnProperty(key) !== undefined) {
+          //   widget.value = `$450.00`;
+          // }
           return widget;
         });
       },
